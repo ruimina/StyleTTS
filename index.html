@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Audio samples from "StyleTTS: Recombine Disentangled Timbre and Rhythm For Cross Speaker Style Control Speech Synthesis"</title>
+    <title>Audio samples from "StyleTTS: Stylized Text-to-Speech with Fine-Grained Style Disentanglement, Control and Transfer"</title>
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 
@@ -16,7 +16,7 @@
 
       <header>
 
-        <h1>Audio samples from "StyleTTS: Recombine Disentangled Timbre and Rhythm For Cross Speaker Style Control Speech Synthesis"</h1>
+        <h1>Audio samples from "StyleTTS: Stylized Text-to-Speech with Fine-Grained Style Disentanglement, Control and Transfer"</h1>
 
       </header>
 
@@ -29,8 +29,7 @@
 
     <div><b>Abstract:</b>
 
-        </br> We define the speaker’s style as scenes (like news, novels, etc.), dialect accents (like Chinese Henan accent, Chinese Northeast accent) etc. Generally, the style of synthesized speech is closely related to the recording style of the speaker. In this work, we propose StyleTTS, a model that can make a speaker synthesize different styles by learning from other speakers. This model supports the decoupling of rhythm and timbre to attain the goal of cross speaker style control. The model utilizes frame-level VAE to extract prosodic information from speech, then uses two different modules to model timbre and rhythm. During inference time, we combine timbre and rhythm from different speakers to achieve cross speaker style control. Experiments show that our model has good performance in style control, like multiple scene, dialect accent control synthesis, and also on cross-language synthesis. </br></br>
-
+        </br> Speech synthesis is used in many scenarios, while different scenarios require synthesized speech with different styles. Generally, the style of synthesized speech is closely related to the recording style of the speaker. In this work, we propose StyleTTS, a model that can make a speaker synthesize different styles by learning from other speakers. This model supports the disentanglement of prosody and timbre to attain the goal of cross speaker style control. The model utilizes frame-level VAE to extract fine-grained prosody information from speech, then uses two different modules to model timbre and prosody. During inference time, we combine timbre and prosody from different speakers to achieve style transfer. Experiments show that our model has good performance in style control, like multiple scenes, dialect accent control synthesis, and also on crosslanguage synthesis. </br></br> 
     </div>
 
     &nbsp;
@@ -73,22 +72,22 @@
       <th>StyleTTS-source</th>
       <td><audio controls=""><source src="samples/StyleTTS-source/news_1.wav"></audio></td>
       <td><audio controls=""><source src="samples/StyleTTS-source/novel_1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-source/henan_1.wav"></audio></td>
+      <td>&nbsp;</td>
       <td><audio controls=""><source src="samples/StyleTTS-source/english_1.wav"></audio></td>
     </tr>
     <tr>
       <th>StyleTTS-p&e</th>
       <td><audio controls=""><source src="samples/StyleTTS-p&e/news_1.wav"></audio></td>
       <td><audio controls=""><source src="samples/StyleTTS-p&e/novel_1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-p&e/henan_1.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-p&e/english_1.wav"></audio></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <th>StyleTTS-transfer</th>
-      <td><audio controls=""><source src="samples/StyleTTS-transfer/zz-ang_002.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-transfer/zz-hap_003.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-transfer/zz-neu_004.wav"></audio></td>
-      <td><audio controls=""><source src="samples/StyleTTS-transfer/zz-sad_004.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/news_1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/novel_1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/henan_1.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/english_1.wav"></audio></td>
     </tr>
   </tbody>
 </table>
