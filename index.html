@@ -32,8 +32,6 @@
         </br> Speech synthesis is used in many scenarios, while different scenarios require synthesized speech with different styles. Generally, the style of synthesized speech is closely related to the recording style of the speaker. In this work, we propose StyleTTS, a model that can make a speaker synthesize different styles by learning from other speakers. This model supports the disentanglement of prosody and timbre to attain the goal of cross speaker style control. The model utilizes frame-level VAE to extract fine-grained prosody information from speech, then uses two different modules to model timbre and prosody. During inference time, we combine timbre and prosody from different speakers to achieve style transfer. Experiments show that our model has good performance in style control, like multiple scenes, dialect accent control synthesis, and also on crosslanguage synthesis. </br></br> 
     </div>
 
-    &nbsp;
-
 <div><b>Methods meaning</b></div>
     <div>
       <b>GT:</b>
@@ -55,15 +53,14 @@
       <b>StyleTTS-transfer :</b>
       our method using the source timbre speech training decoder and using the target style speech training prosody predictor, while the prosody extractor uses frame-level VAE.
     </div>
- &nbsp;
 
   <p>This pages contains a set of speech samples used in out subjective evaluations.<b>All utterances were unseen in training.</b></p>
    &nbsp;
 <h3>Style Control</h3>
+Reference <audio controls=""><source src="samples/GT/source.wav"></audio>
 <table>
   <tbody>
     <tr>
-      <td align="center">Reference</td>
       <td>Method</td>
       <td align="center">News</td>
       <td align="center">Novel</td>
@@ -71,7 +68,13 @@
       <td align="center">English</td>
     </tr>
     <tr>
-      <th rowspan="5"><audio controls=""><source src="samples/GT/source.wav"></audio></th>
+      <td>Method</td>
+      <td align="center">News</td>
+      <td align="center">Novel</td>
+      <td align="center">Chinese Henan Dialect</td>
+      <td align="center">English</td>
+    </tr>
+    <tr>
       <th>GT</th>
       <td><audio controls=""><source src="samples/GT/news_1.wav"></audio></td>
       <td><audio controls=""><source src="samples/GT/novel_1.wav"></audio></td>
@@ -105,6 +108,49 @@
       <td><audio controls=""><source src="samples/StyleTTS-transfer/novel_1.wav"></audio></td>
       <td><audio controls=""><source src="samples/StyleTTS-transfer/henan_1.wav"></audio></td>
       <td><audio controls=""><source src="samples/StyleTTS-transfer/english_1.wav"></audio></td>
+    </tr>
+    
+    <tr>
+      <td>Method</td>
+      <td align="center">News</td>
+      <td align="center">Novel</td>
+      <td align="center">Chinese Henan Dialect</td>
+      <td align="center">English</td>
+    </tr>
+    <tr>
+      <th>GT</th>
+      <td><audio controls=""><source src="samples/GT/news_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/GT/novel_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/GT/henan_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/GT/english_2.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>StyleTTS-target</th>
+      <td><audio controls=""><source src="samples/StyleTTS-target/news_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-target/novel_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-target/henan_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-target/english_2.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>StyleTTS-source</th>
+      <td><audio controls=""><source src="samples/StyleTTS-source/news_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-source/novel_2.wav"></audio></td>
+      <td>&nbsp;</td>
+      <td><audio controls=""><source src="samples/StyleTTS-source/english_2.wav"></audio></td>
+    </tr>
+    <tr>
+      <th>StyleTTS-p&e</th>
+      <td><audio controls=""><source src="samples/StyleTTS-p&e/news_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-p&e/novel_2.wav"></audio></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <th>StyleTTS-transfer</th>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/news_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/novel_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/henan_2.wav"></audio></td>
+      <td><audio controls=""><source src="samples/StyleTTS-transfer/english_2.wav"></audio></td>
     </tr>
   </tbody>
 </table>
