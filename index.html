@@ -34,14 +34,31 @@
 
     &nbsp;
 
-<p>This pages contains a set of speech samples used in out subjective evaluations.<b>All utterances were unseen in training.</b></p>
- &nbsp;
+<div><b>Methods meaning</b></div>
     <div>
-      <b>Note:</b>
-      <span style="background-color: #FFFF00">To obtain the best quality, we strongly recommend readers to listen to the audio samples with headphones.</span>
+      <b>GT:</b>
+      ground-truth speech.
+    </div>
+  <div>
+      <b>StyleTTS-target:</b>
+      upper bound method using the target style speech training both decoder and prosody predictor.
+    </div>
+  <div>
+      <b>StyleTTS-source :</b>
+      baseline method using the source timbre speech training both decoder and prosody predictor.
+    </div>
+  <div>
+      <b>StyleTTS-p&e :</b>
+      baseline method using the source timbre speech training decoder and using the target style speech training prosody predictor, while the prosody extractor uses normalized pitch and energy.
+    </div>
+  <div>
+      <b>StyleTTS-transfer :</b>
+      our method using the source timbre speech training decoder and using the target style speech training prosody predictor, while the prosody extractor uses frame-level VAE.
     </div>
  &nbsp;
 
+  <p>This pages contains a set of speech samples used in out subjective evaluations.<b>All utterances were unseen in training.</b></p>
+   &nbsp;
 <h3>Style Control</h3>
 <table>
   <tbody>
